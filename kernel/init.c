@@ -102,7 +102,7 @@ void __rt_init()
   plp_udma_cg_set(plp_udma_cg_get() | (1<<ARCHI_UDMA_HYPER_ID(0)));
 #endif
 
-  if (__rt_check_clusters_start()) goto error;
+  // if (__rt_check_clusters_start()) goto error;
 
   return;
 
