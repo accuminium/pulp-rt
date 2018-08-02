@@ -33,6 +33,9 @@
 #ifndef __RT_RT_DEBUG_H__
 #define __RT_RT_DEBUG_H__
 
+#include "io/stdlib.h"      // abort()
+#include "rt/rt_data.h"     // RT_FC_GLOBAL_DATA
+
 /// @cond IMPLEM
 
 #define RT_LOG_CRIT     0   // Critical condition that will likely leave the system unstable
