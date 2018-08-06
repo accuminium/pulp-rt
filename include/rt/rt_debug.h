@@ -35,6 +35,7 @@
 
 #include "io/stdlib.h"      // abort()
 #include "rt/rt_data.h"     // RT_FC_GLOBAL_DATA
+#include "rt/rt_utils.h"    // rt_{cluster,core}_id(),
 
 /// @cond IMPLEM
 
