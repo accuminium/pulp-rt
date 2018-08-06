@@ -55,7 +55,7 @@ static inline int rt_debug_config_werror();
 
 
 
-#if defined(__RT_USE_IO)
+//#if defined(__RT_USE_IO)
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -99,23 +99,23 @@ static inline int rt_debug_config_werror();
     abort(); \
   } while(0)
 
-#else
-
-#define rt_msg(x...) while(0)
-#define rt_debug(x...) while(0)
-#define rt_info(x...) while(0)
-#define rt_error(x...) while(0)
-#define rt_warning(x...) while(0)
-#define rt_fatal(x...) do { abort(); } while(0)
-
-#define RT_LOG_FATALS(x)    0
-#define RT_LOG_ERRORS(x)    0
-#define RT_LOG_WARNINGS(x)  0
-#define RT_LOG_INFOS(x)     0
-#define RT_LOG_DEBUGS(x)    0
-#define RT_LOG_TRACES(x)    0
-
-#endif
+//#else
+//
+//#define rt_msg(x...) while(0)
+//#define rt_debug(x...) while(0)
+//#define rt_info(x...) while(0)
+//#define rt_error(x...) while(0)
+//#define rt_warning(x...) while(0)
+//#define rt_fatal(x...) do { abort(); } while(0)
+//
+//#define RT_LOG_FATALS(x)    0
+//#define RT_LOG_ERRORS(x)    0
+//#define RT_LOG_WARNINGS(x)  0
+//#define RT_LOG_INFOS(x)     0
+//#define RT_LOG_DEBUGS(x)    0
+//#define RT_LOG_TRACES(x)    0
+//
+//#endif
 
 
 
